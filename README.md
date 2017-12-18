@@ -2,7 +2,7 @@
 
 Instagram scraper which uses postaddictme's instagram-php-scraper and custom node scripts to scrape user details (username, full name, bio, id, # of posts, and email) by followers, following, and tag.
 
-### 3 Different Scrapers (found in InstaScraper/vendor/raiym/instagram-php-scraper/scrapers):
+### 3 Different Scrapers (found in InstaScraper/php-clients):
   1. getDetailsByFollower.php
     * gets all users following the target username, and writes each user's account details to CSV file 
   2. getDetailsByFollowing.php
@@ -14,12 +14,12 @@ Instagram scraper which uses postaddictme's instagram-php-scraper and custom nod
 ### How To Run:
 
   1. Install instagram-php-scraper - follow installation instructions [here](https://github.com/postaddictme/instagram-php-scraper)
-  2. Add php-clients to the raiym/instagram-php-scraper/ folder
+  2. Add php-clients folder to raiym/instagram-php-scraper
   3. Set valid Instagram credentials
   4. Set correct target values and file paths
   5. Run script from terminal
 
-## Ex:
+### Ex:
   1.  'cd CORRECT_FILE_PATH/raiym/instagram-php-scraper/php-clients'
   2.  'php getDetailsByFollower.php'
 
