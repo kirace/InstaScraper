@@ -16,7 +16,7 @@ $following = $instagram->getFollowing($account->getId(), $numFollowing, 100, tru
 //echo json_encode($followers, JSON_PRETTY_PRINT);
 
 for($i = 0; $i < count($following); $i++){
-  $output = shell_exec('node /CORRECT_PATH_TO/InstagramScraper/jsdom_scripts/profileScrape.js ' . $following[$i]['username']);
+  $output = shell_exec('node /CORRECT_PATH_TO/InstaScraper/jsdom_scrapers/profileScrape.js ' . $following[$i]['username']);
   //echo $output;
 }
 
